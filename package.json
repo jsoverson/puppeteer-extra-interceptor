@@ -1,13 +1,21 @@
 {
   "name": "puppeteer-extra-interceptor",
   "version": "0.0.0",
-  "description": "",
+  "description": "Puppeteer-extra plugin version of puppeteer-interceptor",
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "puppeteer",
+    "intercept",
+    "plugin",
+    "puppeteer-extra",
+    "modify",
+    "request",
+    "response"
+  ],
+  "author": "jsoverson",
   "license": "ISC",
   "dependencies": {
     "puppeteer-extra-plugin": "^3.1.4",

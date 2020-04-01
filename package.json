@@ -1,0 +1,20 @@
+{
+  "name": "puppeteer-extra-interceptor",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-extra-plugin": "^3.1.4",
+    "puppeteer-interceptor": "^0.1.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^2.1.1",
+    "puppeteer-extra": "^3.1.9"
+  }
+}

@@ -1,11 +1,27 @@
 {
-  "name": "puppeteer-extra-interceptor",
+  "name": "puppeteer-extra-plugin-interceptor",
   "version": "0.1.0",
   "description": "Puppeteer-extra plugin version of puppeteer-interceptor",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "test": "node index.test.js"
+    "build": "tsc",
+    "compile": "npm run clean && tsc --declaration",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run compile",
+    "format": "prettier --write 'src/**/*.ts' 'test/**/*.ts'",
+    "watch": "tsc -w",
+    "test": "mocha"
   },
+  "author": {
+    "name": "Jarrod Overson",
+    "email": "jsoverson@gmail.com",
+    "url": "https://jarrodoverson.com"
+  },
+  "files": [
+    "README.md",
+    "dist/**/*"
+  ],
   "keywords": [
     "puppeteer",
     "intercept",
@@ -15,14 +31,19 @@
     "request",
     "response"
   ],
-  "author": "jsoverson",
   "license": "ISC",
   "dependencies": {
     "puppeteer-extra-plugin": "^3.1.4",
     "puppeteer-interceptor": "^0.1.0"
   },
   "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "devtools-protocol": "0.0.761827",
+    "mocha": "^7.1.1",
+    "prettier": "^2.0.5",
     "puppeteer": "^2.1.1",
-    "puppeteer-extra": "^3.1.9"
+    "puppeteer-extra": "^3.1.9",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
   }
 }

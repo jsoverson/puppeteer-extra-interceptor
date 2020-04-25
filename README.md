@@ -1,4 +1,4 @@
-# puppeteer-extra-interceptor
+# puppeteer-extra-plugin-interceptor
 
 A puppeteer-extra plugin that simplifies request interception and response modification.
 
@@ -20,14 +20,14 @@ Please see [puppeteer-interceptor](http://github.com/jsoverson/puppeteer-interce
 ## Installation
 
 ```shell
-$ npm install puppeteer-extra-interceptor
+$ npm install puppeteer-extra-plugin-interceptor
 ```
 
 ## Usage
 
 ```js
 const puppeteer = require('puppeteer-extra');
-const { interceptor, patterns } = require('puppeteer-extra-interceptor');
+const { interceptor, patterns } = require('puppeteer-extra-plugin-interceptor');
 
 puppeteer.use(interceptor());
 
@@ -49,7 +49,7 @@ This example uses Prettier to automatically intercept and prettify all JavaScrip
 
 ```js
 const puppeteer = require('puppeteer-extra');
-const { interceptor, patterns } = require('puppeteer-extra-interceptor');
+const { interceptor, patterns } = require('puppeteer-extra-plugin-interceptor');
 
 puppeteer.use(interceptor());
 

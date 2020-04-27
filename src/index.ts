@@ -3,10 +3,13 @@ import { PuppeteerExtraPlugin } from 'puppeteer-extra-plugin';
 import { intercept, Interceptor } from 'puppeteer-interceptor';
 import Protocol from "devtools-protocol";
 
+export { Interceptor } from 'puppeteer-interceptor';
+export { Protocol as DevtoolProtocol } from 'devtools-protocol';
+
 export { patterns } from 'puppeteer-interceptor';
 
 declare module 'puppeteer' {
-  interface Page {
+  export interface Page {
     intercept(patterns: Protocol.Fetch.RequestPattern[], eventHandlers: Interceptor.EventHandlers): void;
   }
 }

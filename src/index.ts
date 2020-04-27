@@ -1,7 +1,7 @@
 import { Browser, Page } from 'puppeteer';
 import { PuppeteerExtraPlugin } from 'puppeteer-extra-plugin';
 import { intercept, Interceptor } from 'puppeteer-interceptor';
-import Protocol from "puppeteer-interceptor/node_modules/devtools-protocol";
+import Protocol from "devtools-protocol";
 
 export { patterns } from 'puppeteer-interceptor';
 

@@ -34,11 +34,11 @@
   "license": "ISC",
   "dependencies": {
     "puppeteer-extra-plugin": "^3.1.4",
+    "devtools-protocol": "0.0.761827",
     "puppeteer-interceptor": "^0.1.0"
   },
   "devDependencies": {
     "@types/mocha": "^7.0.2",
-    "devtools-protocol": "0.0.761827",
     "mocha": "^7.1.1",
     "prettier": "^2.0.5",
     "puppeteer": "^2.1.1",
